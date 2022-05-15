@@ -16,7 +16,7 @@ class Angle:
         self.middle = (self.max_angle - self.min_angle) / 2.0
         self.current = self.middle
 
-    def __get__(self) -> tuple:
+    def __get__(self):
         """Get the set min and max angles
 
         Returns:

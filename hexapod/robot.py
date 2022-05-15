@@ -31,8 +31,10 @@ class Robot:
             self.legs.append(leg)
             if leg_number in left_legs:
                 self.left_legs.append(leg)
-            else:
+            elif leg_number in right_legs:
                 self.right_legs.append(leg)
+            else:
+                raise ValueError(f"leg {leg_number} not in either right of left leg list")
 
     def all_off(self):
         for leg in self.legs:

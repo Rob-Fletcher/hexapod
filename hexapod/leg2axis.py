@@ -70,6 +70,7 @@ class Leg2Axis:
         self._move()
 
     def h_middle(self):
+        print(self.h_angle.middle_angle)
         self.h_angle.middle()
         self._move()
 
