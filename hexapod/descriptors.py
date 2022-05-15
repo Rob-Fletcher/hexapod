@@ -13,7 +13,7 @@ class Angle:
     def __init__(self, min:float = 0.0, max:float = 360.0):
         self.min_angle = float(min)
         self.max_angle = float(max)
-        self.middle = (self.max_angle - self.min_angle) / 2.0
+        self.middle_angle = (self.max_angle - self.min_angle) / 2.0
         self.current = self.middle
 
     def __get__(self):
